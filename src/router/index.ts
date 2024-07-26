@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ItemView from '../views/ItemView.vue'
 import Reactive from '../views/Reactive.vue'
-import UserProfile from '@/components/UserProfile.vue'
-import UserDetail from '@/components/UserDetail.vue'
+import AllProfile from '@/components/AllProfile.vue'
+import ProfileDetail from '@/components/ProfileDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,15 +34,15 @@ const router = createRouter({
     },
 
     {
-      path: '/UserProfile',
-      name: 'UserProfile',
-      component: UserProfile
+      path: '/AllProfile',
+      name: 'AllProfile',
+      component: AllProfile
     },
 
     {
-      path: '/UserProfile/:id',
-      name: 'UserDetail',
-      component: UserDetail,
+      path: '/ProfileDetail/:id',
+      name: 'ProfileDetail',
+      component: ProfileDetail,
       props: true
     }
   ]
